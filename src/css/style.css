@@ -1,0 +1,14 @@
+@import './partials/normalize.css';
+@import './partials/accordion.css';
+
+html {
+    font-size: 18px;
+}
+.title {
+    color: red;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+}

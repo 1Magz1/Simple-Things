@@ -1,0 +1,23 @@
+{
+  "name": "simple-things",
+  "version": "1.0.0",
+  "description": "Simple things with JS and CSS",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "parcel ./src/index.html -p 1488 --open",
+    "build": "parcel ./src/index.html --no-source-maps"
+  },
+  "keywords": [
+    "JS",
+    "HTML",
+    "CSS"
+  ],
+  "author": "Maxim Chipurnov",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "partials": "^0.1.0"
+  }
+}
