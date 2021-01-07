@@ -1,3 +1,5 @@
-import {Accordion} from './partials/accordion';
+import {AccordionNoAnim} from './partials/accordion-no-anim';
+import {AccordionAnim} from './partials/accordion-anim';
 
-Accordion();
+AccordionNoAnim();
+AccordionAnim();

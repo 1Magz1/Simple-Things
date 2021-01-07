@@ -1,13 +1,9 @@
-export function Accordion() {
+export function AccordionAnim() {
     let accordion = document.querySelectorAll('.accordion');
 
     for (let i = 0; i < accordion.length; i++) {
         accordion[i].addEventListener('click', function () {
-            if (this.classList.contains('no-animation')) {
-
-                this.classList.toggle('active');
-
-            } else if (this.classList.contains('animation')) {
+            if (this.classList.contains('animation')) {
 
                 this.classList.toggle('active');
 
