@@ -1,3 +1,4 @@
+/* Accordion */
 .accordion {
     background-color: #eee;
     color: #444;
@@ -14,6 +15,18 @@
     font-weight: 600;
     position: relative;
 }
+.accordion__footer {
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}
+.accordion__footer span {
+    display: block;
+    margin-top: 35px;
+}
+/* Accordion Icon */
 .accordion__header::after,
 .accordion__header::before {
     content: '';
@@ -29,31 +42,20 @@
 .accordion__header::before {
     transform: rotate(90deg);
 }
-.accordion__footer {
-    font-size: 1.1rem;
-    font-weight: 400;
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-}
-.accordion__footer span {
-    display: block;
-    margin-top: 35px;
-}
-.accordion__footer.accordion__footer--anim {
-    display: block;
-    max-height: 0;
-    transition: max-height 0.4s ease-out;
-}
-
-.accordion.active.no-animation .accordion__footer {
-    display: block;
-}
-
-
+/* Accordion Icon Animation*/
 .accordion.active .accordion__header::after {
     transform: rotate(45deg);
 }
 .accordion.active .accordion__header::before {
     transform: rotate(135deg);
+}
+/* Accordion Without Animation */
+.accordion.active.no-animation .accordion__footer {
+    display: block;
+}
+/* Accrdion With Animation */
+.accordion__footer.accordion__footer--anim {
+    display: block;
+    max-height: 0;
+    transition: max-height 0.4s ease-out;
 }
