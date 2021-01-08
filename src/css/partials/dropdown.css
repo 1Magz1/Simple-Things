@@ -1,0 +1,55 @@
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+.dropdown__btn {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #000;
+    background-color: #eee;
+    cursor: pointer;
+    position: relative;
+}
+.dropdown__menu {
+    display: none;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    max-width: 146px;
+    border: 2px solid #000;
+}
+.dropdown__menu.start {
+    display: block;
+    animation: rotateMenu 400ms ease-in-out forwards;
+    transform-origin: top center;
+}
+.dropdown__menu.stop {
+    display: block;
+    animation: reverseMenu 400ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+@keyframes rotateMenu {
+    0% {
+        transform: rotateX(-90deg);
+    }
+    70% {
+        transform: rotateX(20deg);
+    }
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+@keyframes reverseMenu {
+    0% {
+        transform: rotateX(0deg);
+    }
+    70% {
+        transform: rotateX(20deg);
+    }
+    100% {
+        transform: rotateX(90deg);
+    }
+}

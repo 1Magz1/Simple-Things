@@ -1,5 +1,6 @@
 @import './partials/normalize.css';
 @import './partials/accordion.css';
+@import './partials/dropdown.css';
 
 html {
     font-size: 18px;
